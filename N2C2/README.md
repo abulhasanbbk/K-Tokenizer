@@ -1,36 +1,36 @@
-ner.py
+# ner.py
 
-A script for Named Entity Recognition (NER) using K-Tokenizer.
+A script for clincial concept extraction using K-Tokenizer.
 
-Usage
+## Usage
 
 To run the ner.py script, execute:
 
 python ner.py --corpus <base|umls|mimic> --seed <your seed>
 
-Arguments
+## Arguments
 
 --corpus  : Specify the corpus to use. Must be one of:
 
-base  — the base clinical text dataset
+base  — using ClinicalBERT tokenizer
 
-umls  — text augmented with UMLS concepts
+umls  — using K-Tokenizer built from UMLS.
 
-mimic — the MIMIC-III clinical dataset
+mimic — using K-Tokenizer built from MIMIC-III dataset.
 
 --seed    : Integer seed for random number generators to ensure reproducibility.
 
 Examples
 
 # Run on the base corpus with seed 42
-env/bin/python ner.py --corpus base --seed 42
+env/bin/python ner.py --corpus base --seed 48 (Will run simply the base tokenizer)
 
 # Run on UMLS-augmented corpus with seed 123
-python ner.py --corpus umls --seed 123
+python ner.py --corpus umls --seed 48 (Will run the UMLS based K-Tokenizer)
 
 Outputs
 
-The script outputs token-level NER predictions in a JSON file named <corpus>_ner_results_seed<seed>.json.
+The script outputs token-level prediction results
 
 Requirements
 
