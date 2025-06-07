@@ -1,0 +1,22 @@
+export CUDA_VISIBLE_DEVICES=1
+python3 run_icd_ktok.py \
+ --code_50 \
+ --train_file ../data/mimic3/train_50.csv \
+ --validation_file ../data/mimic3/dev_50.csv \
+ --max_length 512 \
+ --chunk_size 128 \
+ --model_name_or_path ../infused_umls_clinical_bert/infused_cinical_bert_model_extended/ \
+ --per_device_train_batch_size 1 \
+ --gradient_accumulation_steps 8 \
+ --per_device_eval_batch_size 1 \
+ --num_train_epochs 20 \
+ --num_warmup_steps 2000 \
+ --output_dir ../models/ClinicalKBERT_UMLS_20_Code_50/ \
+ --model_type bert \
+ --model_mode laat \
+ --result_path ../results/ClinicalKBERT_UMLS_20_Code_50/ \
+ --corpus umls \
+ --tokenizer_base_loc ../umls_tokenization/ \
+ --seed 2048 \
+ --fertility 0.0 \
+ --percent_data 5
