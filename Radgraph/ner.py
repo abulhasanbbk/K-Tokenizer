@@ -27,7 +27,7 @@ import time
 seqeval = evaluate.load("seqeval")
 RESULT_BASE_LOC="Results_Labeller_1_100_percent"
 MODEL_SAVE_LOC="Saved_Models"
-INFUSED_UMLS_MODEL_BASE_LOC="../infused_umls_clinical_bert"
+INFUSED_UMLS_MODEL_BASE_LOC="abulhasan/clinical-bert-ktokenizer"
 INFUSED_MIMIC_MODEL_BASE_LOC="../infused_mimic_clinical_bert"
 NUM_PARTITION=2
 RADGRAPH_DATA_LOC="./data"
@@ -389,7 +389,7 @@ if __name__ == "__main__":
     fine_tuned_model_loc=os.path.join(MODEL_SAVE_LOC, finetuned_save_loc)
     check_or_create_folder(fine_tuned_model_loc) 
     if args.corpus=="umls":
-        bert_model_loc=os.path.join(INFUSED_UMLS_MODEL_BASE_LOC, infusedBertModelFileName.infused_bert_model) #using the 13000 ktokenizer files
+        bert_model_loc=INFUSED_UMLS_MODEL_BASE_LOC #using the 13000 ktokenizer files
         f=fertilities[0]
         tokenizer=KTokenizerFromUMLS(locations, f)
         run_ner(tokenizer, bert_model_loc, result_loc, fine_tuned_model_loc,train_data_loc, test_data_loc, NUM_PARTITION, args.corpus, args.seed)
