@@ -5,7 +5,7 @@ python3 run_icd_ktok.py \
  --validation_file ../data/mimic3/dev_50.csv \
  --max_length 512 \
  --chunk_size 128 \
- --model_name_or_path ../infused_umls_clinical_bert/infused_cinical_bert_model_extended/ \
+ --model_name_or_path abulhasan/clinical-bert-ktokenizer \
  --per_device_train_batch_size 1 \
  --gradient_accumulation_steps 8 \
  --per_device_eval_batch_size 1 \
