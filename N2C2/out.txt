@@ -1,0 +1,40 @@
+Seeds found: [48, 1024, 2048] 
+
+Starting to resampling 0
+Starting to resampling 100
+Starting to resampling 200
+Starting to resampling 300
+Starting to resampling 400
+Starting to resampling 500
+Starting to resampling 600
+Starting to resampling 700
+Starting to resampling 800
+Starting to resampling 900
+Seed 48: ΔF1 = +0.005  95% CI [0.004, 0.007]  (docs = 33027)
+Starting to resampling 0
+Starting to resampling 100
+Starting to resampling 200
+Starting to resampling 300
+Starting to resampling 400
+Starting to resampling 500
+Starting to resampling 600
+Starting to resampling 700
+Starting to resampling 800
+Starting to resampling 900
+Seed 1024: ΔF1 = +0.006  95% CI [0.004, 0.007]  (docs = 33027)
+Starting to resampling 0
+Starting to resampling 100
+Starting to resampling 200
+Starting to resampling 300
+Starting to resampling 400
+Starting to resampling 500
+Starting to resampling 600
+Starting to resampling 700
+Starting to resampling 800
+Starting to resampling 900
+Seed 2048: ΔF1 = +0.006  95% CI [0.004, 0.007]  (docs = 33027)
+
+Across seeds:
+Mean ΔF1     = +0.006
+Paired t-test  : t(df=2) = 41.654  p=0.0006
+Wilcoxon test : W = 0.0                p=0.2500

@@ -1,0 +1,1 @@
+python create_KTokenizer.py --model b --corpus umls --max_iterations 20 
