@@ -1,0 +1,1 @@
+python vocabulary_generator.py --drug_data_path  /working/abul/umls_related_programs/drug.pkl --symptom_data_path /working/abul/umls_related_programs/symptom.pkl --max_iterations 20
