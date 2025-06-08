@@ -27,7 +27,7 @@ mimic — using K-Tokenizer built from MIMIC-III dataset.
 --data_type : xr or chexpert
 Examples
 
-# Run on the base toeknizer with seed 48
+# Run on the base tokenizer with seed 48
 env/bin/python ner.py --corpus base --seed 48 --data_type cxr(Will run simply the base tokenizer)
 
 # Run on K-Tokenzer with seed 48
