@@ -26,10 +26,10 @@ mimic — using K-Tokenizer built from MIMIC-III dataset.
 
 Examples
 
-# Run on the base corpus with seed 42
+# Run on the base corpus with seed 48
 env/bin/python ner.py --corpus base --seed 48 (Will run simply the base tokenizer)
 
-# Run on UMLS-augmented corpus with seed 123
+# Run on UMLS-augmented corpus with seed 48
 python ner.py --corpus umls --seed 48 (Will run the UMLS based K-Tokenizer)
 
 Outputs
