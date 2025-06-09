@@ -6,7 +6,7 @@ A tokenisation framework for clinical text processing
 
 K-Tokenizer is a modular framework designed to perform robust tokenisation on clinical text. It supports a variety of downstream clinical NLP tasks by providing specialised tokenisation routines.
 <figure>
-  <img src="figure_1.pdf" alt="Overview of the K-Tokenizer pipeline">
+  <img src="k-tokensier-framework.png" alt="Overview of the K-Tokenizer pipeline">
   <figcaption>Figure 1: Overview of the K-Tokenizer pipeline.</figcaption>
 </figure>
 
