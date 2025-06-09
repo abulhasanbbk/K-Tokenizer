@@ -9,6 +9,7 @@ K-Tokenizer is a modular framework designed to perform robust tokenisation on cl
   <img src="figure_1.pdf" alt="Overview of the K-Tokenizer pipeline">
   <figcaption>Figure 1: Overview of the K-Tokenizer pipeline.</figcaption>
 </figure>
+
 ## Folder Structure
 
 Each folder in this repository contains the code necessary to run K-Tokenizer for specific downstream tasks as described in our paper:
@@ -29,6 +30,3 @@ cd K-Tokenizer
 
 Navigate to the folder for your task (e.g., `ICD-9/`) and follow the instructions in its README or script headers.
 
-## Citation
-
-If you use this framework in your work, please cite our paper.
