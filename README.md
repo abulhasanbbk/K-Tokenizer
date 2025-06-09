@@ -12,12 +12,12 @@ K-Tokeniser is a modular framework designed to perform robust tokenisation on cl
 
 ## Folder Structure
 
-Each folder in this repository contains the code necessary to run K-Tokenizer for specific downstream tasks as described in our paper:
+Each folder in this repository contains the code necessary to run K-Tokeniser for specific downstream tasks as described in our paper:
 
 * **ICD-9/**: Contains scripts and configurations for processing clinical notes for ICD-9 Automated Clinical Coding.
 * **N2C2/**: Provides code for tokenisation pipelines tailored for Clinical Concepts Extraction task.
 * **RadGraph/**: Includes tokenisation routines for Clinical Phenotype Identification.
-* **litcovid/**: Houses code to run K-Tokenizer on Clinical Research Article Classification.
+* **litcovid/**: Houses code to run K-Tokeniser on Clinical Research Article Classification.
 
 ## Usage
 
